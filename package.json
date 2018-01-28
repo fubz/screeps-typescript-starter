@@ -1,10 +1,11 @@
 {
-  "name": "screeps-typescript-starter",
+  "name": "united-friends",
   "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
   "scripts": {
+    "postinstall": "node ./postinstall.js",
     "lint": "tslint \"src/**/*.ts\"",
     "push-main": "rollup -c --dest main",
     "push-pserver": "rollup -c --dest pserver",
@@ -16,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/screepers/screeps-typescript-starter.git"
+    "url": "git+https://github.com/fubz/united-friends.git"
   },
   "author": "",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/screepers/screeps-typescript-starter/issues"
+    "url": "https://github.com/fubz/united-friends/issues"
   },
-  "homepage": "https://github.com/screepers/screeps-typescript-starter#readme",
+  "homepage": "https://github.com/fubz/united-friends#readme",
   "devDependencies": {
     "@types/lodash": "^3.10.1",
     "@types/screeps": "^2.1.0",
@@ -38,6 +39,7 @@
     "typescript": "^2.6.1"
   },
   "dependencies": {
+    "screeps-profiler": "^2.0.1",
     "source-map": "^0.6.1"
   }
 }
