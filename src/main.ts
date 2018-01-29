@@ -1,6 +1,6 @@
 // import * as Profiler from 'utils/repos/Profiler/Profiler'
 // import Traveler from 'utils/repos/Traveler/Traveler'
-import Hive from 'Hive'
+import {Hive} from 'Hive'
 import MemoryManager from 'Memory'
 import { ErrorMapper } from 'utils/ErrorMapper'
 import Traveler from 'utils/Traveler'
@@ -23,9 +23,9 @@ export const loop = ErrorMapper.wrapLoop(() => {
   }
   try {
     if (Game.cpu.bucket > 4000) {
-      new Report().execute()
+      // new Report().execute()
     } else {
-      console.log(JSON.stringify('CPU USED: ' + Game.cpu.getUsed() + ' --- Bucket: ' + Game.cpu.bucket))
+      // console.log(JSON.stringify('CPU USED: ' + Game.cpu.getUsed() + ' --- Bucket: ' + Game.cpu.bucket))
     }
   } catch (e) {
     console.log('error with Task_Report \n', e.stack)
