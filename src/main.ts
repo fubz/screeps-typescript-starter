@@ -10,10 +10,12 @@ import {Report} from './utils/Report'
 // When compiling TS to JS and bundling with rollup, the line numbers and file names in error messages change
 // This utility uses source maps to get the line numbers and file names of the original, TS source code
 export const loop = ErrorMapper.wrapLoop(() => {
+  // TOVARISH
   Logger.info(`===== Current game tick is ${Game.time} =====`)
 
   Hive.tick()
   // fubz
+
 
   // Automatically delete memory of missing creeps
   for (const name in Memory.creeps) {
