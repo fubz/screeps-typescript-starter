@@ -29,6 +29,7 @@
     "@types/lodash": "^3.10.1",
     "@types/screeps": "^2.1.0",
     "@types/source-map": "^0.5.2",
+    "gift": "^0.10.2",
     "rollup": "^0.53.2",
     "rollup-plugin-clean": "^1.0.0",
     "rollup-plugin-commonjs": "^8.2.6",
