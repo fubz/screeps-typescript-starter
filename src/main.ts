@@ -11,18 +11,12 @@ import {Report} from './utils/Report'
 // This utility uses source maps to get the line numbers and file names of the original, TS source code
 export const loop = ErrorMapper.wrapLoop(() => {
   // TOVARISH
-  Logger.info(`===== Current game tick is ${Game.time} =====`)
+  Logger.debug(`===== Current game tick is ${Game.time} =====`)
 //jeff
   Hive.tick()
   // fubz
 
 
-  // Automatically delete memory of missing creeps
-  for (const name in Memory.creeps) {
-    if (!(name in Game.creeps)) {
-      delete Memory.creeps[name]
-    }
-  }
   try {
     if (Game.cpu.bucket > 4000) {
       // new Report().execute()

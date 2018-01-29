@@ -17,7 +17,7 @@ if (i == 0) {
 export default {
   input: "src/main.ts",
   output: {
-    file: "dist/main.js",
+    file: "./main.js",
     format: "cjs",
     sourcemap: true
   },

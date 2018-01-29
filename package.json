@@ -13,7 +13,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-main": "rollup -cw --dest main",
     "watch-pserver": "rollup -cw --dest pserver",
-    "watch-sim": "rollup -cw --dest sim"
+    "watch-sim": "rollup -cw --dest sim",
+    "watch-compile": "rollup -cw"
   },
   "repository": {
     "type": "git",
