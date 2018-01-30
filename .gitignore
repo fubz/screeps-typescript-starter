@@ -88,3 +88,4 @@ $RECYCLE.BIN/
 *.lnk
 /main.js
 /npm
+/main.js.map.js
