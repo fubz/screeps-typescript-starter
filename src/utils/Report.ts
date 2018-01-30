@@ -45,11 +45,11 @@ export class Report extends Task {
     let hunAvg = this.calculateCPUAverage(100)
     let thoAvg = this.calculateCPUAverage(1000)
     let num = 0
-    return " --- Avg:" + "(Ten: " + tenAvg.toString().slice(0, 5) + ") -- " + "(Hundred: " + hunAvg.toString().slice(0, 5) + ") -- " + "(Thousand: " + thoAvg.toString().slice(0, 5) + ")";
+    return ' --- Avg:' + '(Ten: ' + tenAvg.toString().slice(0, 5) + ') -- ' + '(Hundred: ' + hunAvg.toString().slice(0, 5) + ') -- ' + '(Thousand: ' + thoAvg.toString().slice(0, 5) + ')'
   }
 
   private calculateCPUAverage(n: number): number {
-    let stack = Memory.global["cpu_stack"];
+    const stack = Memory.global['cpu_stack']
     if (stack.length > n) {
       let sum = 0
       let arr = stack.slice(-n);
