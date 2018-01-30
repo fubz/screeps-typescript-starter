@@ -4,18 +4,18 @@ import {Hive} from 'Hive'
 import MemoryManager from 'Memory'
 import { ErrorMapper } from 'utils/ErrorMapper'
 import Traveler from 'utils/Traveler'
+import {initPrototypes} from './prototypes/initPrototypes'
 import {Logger} from './utils/Logger'
 import {Report} from './utils/Report'
+
+initPrototypes()
 
 // When compiling TS to JS and bundling with rollup, the line numbers and file names in error messages change
 // This utility uses source maps to get the line numbers and file names of the original, TS source code
 export const loop = ErrorMapper.wrapLoop(() => {
-  // TOVARISH
   Logger.debug(`===== Current game tick is ${Game.time} =====`)
-//jeff
-  Hive.tick()
-  // fubz
 
+  Hive.tick()
 
   try {
     if (Game.cpu.bucket > 4000) {

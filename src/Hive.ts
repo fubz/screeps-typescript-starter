@@ -1,3 +1,5 @@
+import {Mems}  from './Memory'
+
 export class Hive {
   private static someVar: string = `Hello World ${Hive.num}`
   private static num: number = 0
@@ -5,7 +7,7 @@ export class Hive {
   static tick() {
     console.log(`Hive tick`)
 
-
+    let goals = Mems.getHiveGoals()
 
     // Automatically delete memory of missing creeps
     for (const name in Memory.creeps) {
