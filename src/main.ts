@@ -16,7 +16,6 @@ export const loop = ErrorMapper.wrapLoop(() => {
   Logger.debug(`===== Current game tick is ${Game.time} =====`)
 
   Hive.tick()
-  // Test
 
   try {
     if (Game.cpu.bucket > 4000) {
