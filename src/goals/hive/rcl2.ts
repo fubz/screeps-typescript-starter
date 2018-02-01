@@ -1,9 +1,15 @@
 
-export class RC2 implements InterfaceGoal {
+export class RC2 implements Goal {
+  prerequisite(): boolean {
+    return undefined
+  }
 
+  result(): boolean {
+    return undefined
+  }
 
-  public prerequisite(): boolean
-  result(): boolean;
-  actions(): Action[];
+  actions(): Action[] {
+    return undefined
+  }
 
 }
