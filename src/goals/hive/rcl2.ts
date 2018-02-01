@@ -12,4 +12,5 @@ export class RC2 implements Goal {
     return undefined
   }
 
+
 }
