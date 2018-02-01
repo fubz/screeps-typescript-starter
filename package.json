@@ -6,7 +6,8 @@
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
   "scripts": {
     "postinstall": "node ./postinstall.js",
-    "lint": "tslint \"src/**/*.ts\"",
+    "lint": "tslint --fix \"src/**/*.ts\"",
+    "watch-lint-fix": "nodemon --delay 10 lint",
     "push-main": "rollup -c --dest main",
     "push-pserver": "rollup -c --dest pserver",
     "push-sim": "rollup -c --dest sim",

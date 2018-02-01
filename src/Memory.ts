@@ -4,7 +4,7 @@ export class Mems {
 
   }
 
-  static getHiveGoals() {
+  public static getHiveGoals() {
     return Memory.goals || {}
   }
 }
