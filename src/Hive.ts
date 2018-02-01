@@ -1,4 +1,4 @@
-import {Mems}  from './Memory'
+import {Mems} from './Memory'
 
 
 export class Hive {
