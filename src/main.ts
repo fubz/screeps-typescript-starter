@@ -17,6 +17,18 @@ export const loop = ErrorMapper.wrapLoop(() => {
   profiler.wrap(() => {
     Logger.debug(`===== Current game tick is ${Game.time} =====`)
 
+    // Load Memory from the global object if it is there and up to date.
+    // This way we cache Memory in global and we avoid the overhead of deserializing it every tick
+    if (global.lastTick && global.LastMemory && Game.time === (global.lastTick + 1)) {
+      delete global.Memory
+      global.Memory = global.LastMemory
+      RawMemory._parsed = global.LastMemory
+    } else {
+      global.LastMemory = RawMemory._parsed
+      global.roomData = {}
+    }
+    global.lastTick = Game.time
+
     Hive.tick()
 
     try {
