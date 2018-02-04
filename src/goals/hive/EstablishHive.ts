@@ -1,5 +1,5 @@
 
-export class RC2 implements Goal {
+export class EstablishHive implements Goal {
   public prerequisite(): boolean {
     return true
   }
@@ -9,7 +9,7 @@ export class RC2 implements Goal {
   }
 
   public actions(): Action[] {
-    return [new UpgradeController()]
+    return []
   }
 
 }
