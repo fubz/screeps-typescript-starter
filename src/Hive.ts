@@ -15,12 +15,12 @@ export class Hive {
     }
 
     for (const room in Memory.rooms) {
-      console.log(`room memory: ${JSON.stringify(room)}`)
+      // console.log(`room memory: ${JSON.stringify(room)}`)
     }
 
     for (const room in Game.rooms) {
-      console.log(`room: ${JSON.stringify(room)}`)
-      console.log(`room ${JSON.stringify(room)} memory? ${JSON.stringify(Game.rooms[room].memory)}`)
+      // console.log(`room: ${JSON.stringify(room)}`)
+      // console.log(`room ${JSON.stringify(room)} memory? ${JSON.stringify(Game.rooms[room].memory)}`)
 
     }
   }

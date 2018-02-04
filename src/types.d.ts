@@ -7,3 +7,7 @@ declare const require: (module: string) => any
 interface RawMemory{
   _parsed: Memory
 }
+
+interface Room {
+  setGoal(): void
+}
