@@ -5,7 +5,8 @@ export class Hive {
   public static tick() {
     console.log(`Hive tick`)
 
-    const goals = Memory.getHiveGoals()
+    // This doesn't work.... we need a MemoryManager
+    // const goals = Memory.getHiveGoals()
 
     // Automatically delete memory of missing creeps
     for (const name in Memory.creeps) {

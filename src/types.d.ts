@@ -11,3 +11,7 @@ interface RawMemory{
 interface Room {
   setGoal(): void
 }
+
+interface Memory {
+  getHiveGoals(): any
+}
