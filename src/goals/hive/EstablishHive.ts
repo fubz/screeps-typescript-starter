@@ -1,3 +1,4 @@
+import {EstablishFirstRoom} from '../../actions/hive/EstablishFirstRoom'
 
 export class EstablishHive implements Goal {
   public prerequisite(): boolean {
@@ -9,7 +10,7 @@ export class EstablishHive implements Goal {
   }
 
   public actions(): Action[] {
-    return []
+    return [new EstablishFirstRoom()]
   }
 
 }
