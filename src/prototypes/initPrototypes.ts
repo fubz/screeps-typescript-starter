@@ -1,6 +1,10 @@
+import {initMemoryPrototypes} from './memoryPrototype'
+
 declare let global: any
 
 export function initPrototypes() {
+
+  initMemoryPrototypes()
 
   // Add memory to all sources
   Object.defineProperty(Source.prototype, 'memory', {

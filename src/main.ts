@@ -1,6 +1,5 @@
 // import Traveler from 'utils/repos/Traveler/Traveler'
 import {Hive} from 'Hive'
-import MemoryManager from 'Memory'
 import { ErrorMapper } from 'utils/ErrorMapper'
 import Traveler from 'utils/Traveler'
 import {initPrototypes} from './prototypes/initPrototypes'
